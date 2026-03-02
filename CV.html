@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio R&T - Mon CV | Baptiste ALLART</title>
+    <meta name="description" content="Curriculum Vitae de Baptiste ALLART - Réseaux et Télécommunications">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+    <nav id="main-nav">
+        <div class="container">
+            <a href="index.html" class="logo">PORTFOLIO<span>.RT</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Competences.html">Compétences</a></li>
+                <li><a href="CV.html">Mon CV</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="padding-top: 100px;">
+        <section class="cv-section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Mon <span style="color: var(--primary);">Curriculum Vitae</span></h1>
+                    <p style="color: var(--text-muted); font-size: 1.1rem;">
+                        Ci-dessous vous trouverez mon CV complet en Réseaux et Télécommunications
+                    </p>
+                </div>
+
+                <div class="cv-container">
+                    <div class="cv-display">
+                        <img src="cv_baptiste_allart.png" alt="CV de Baptiste ALLART" id="cv-image" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: var(--card-shadow);">
+                    </div>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="cv_baptiste_allart.png" download class="btn btn-primary" style="display: inline-block;">
+                            📥 Télécharger le CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" style="margin-top: 3rem;">
+            <div class="container text-center">
+                <h2 class="section-title">Des questions ?</h2>
+                <p style="margin-bottom: 2rem;">N'hésitez pas à me contacter pour plus d'informations</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Portfolio Réseaux & Télécommunications. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <style>
+        .cv-section {
+            padding: 4rem 0;
+        }
+
+        .cv-container {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .cv-container:hover {
+            background: rgba(99, 102, 241, 0.05);
+            border-color: var(--primary);
+            box-shadow: var(--card-shadow);
+        }
+
+        .cv-display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 600px;
+        }
+
+        .cv-display img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .cv-display {
+                min-height: auto;
+            }
+
+            .cv-container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</body>
+
+</html>
